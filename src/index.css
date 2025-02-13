@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  --font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6; /* Improved readability */
+  background-color: #f9fafb; /* Light background for better contrast */
+  color: #333; /* Dark text color for readability */
+}
+
+code {
+  font-family: var(--font-family-mono);
+  background-color: #f3f4f6; /* Light gray background for code */
+  padding: 2px 4px; /* Padding for better visibility */
+  border-radius: 4px; /* Rounded corners */
+  color: #d63384; /* Color for code text */
+}
+
+/* Responsive typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600; /* Bold headings */
+}
+
+h1 {
+  font-size: 2.5rem; /* Responsive size */
+}
+
+h2 {
+  font-size: 2rem; /* Responsive size */
+}
+
+h3 {
+  font-size: 1.75rem; /* Responsive size */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller size on mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Smaller size on mobile */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* Smaller size on mobile */
+  }
+}
