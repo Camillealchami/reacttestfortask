@@ -44,3 +44,72 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+deployed application's URL: https://reacttestfortask.vercel.app/
+(reacttestfortask.vercel.app)
+Instructions to Run the React Project Locally
+Prerequisites
+Before you begin, ensure you have the following installed on your machine:
+
+Node.js: Download and install it from nodejs.org. This will also install npm (Node Package Manager).
+Git: If you want to clone the repository, make sure you have Git installed. You can download it from git-scm.com.
+Steps to Run the Project
+Clone the Repository: Open your terminal and run the following command to clone the repository (replace YOUR_GITHUB_REPO_URL with the actual URL of your GitHub repository):
+
+bash
+Copy code
+git clone YOUR_GITHUB_REPO_URL
+Navigate to the Project Directory: Change into the project directory:
+
+bash
+Copy code
+cd your-project-name
+Install Dependencies: Run the following command to install the required dependencies:
+
+bash
+Copy code
+npm install
+Configure Tailwind CSS (if not already configured): If you haven't set up Tailwind CSS yet, follow these steps:
+
+Install Tailwind CSS and its dependencies:
+bash
+Copy code
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+In tailwind.config.js, add the paths to your template files:
+javascript
+Copy code
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+In src/index.css, add the Tailwind directives:
+css
+Copy code
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Start the Development Server: After the dependencies are installed, you can start the development server with:
+
+bash
+Copy code
+npm start
+Open Your Browser: Once the server is running, open your web browser and go to:
+
+Copy code
+http://localhost:3000
+You should see your React application running locally.
+
+Additional Notes
+Stopping the Server: To stop the development server, go back to your terminal and press Ctrl + C.
+Building for Production: If you want to create a production build of your application, you can run:
+bash
+Copy code
+npm run build
+This will create a build directory with the optimized production build of your app.
+Conclusion
+These instructions should help anyone set up and run your React project locally. Make sure to replace placeholders with actual values specific to your project. If you have any additional features or configurations, feel free to add them to the README as well!
